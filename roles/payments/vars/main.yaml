@@ -1,0 +1,5 @@
+CART_HOST: cart.gurulabs.xyz
+USER_HOST: user.gurulabs.xyz
+RABBITMQ_HOST: rabbitmq.gurulabs.xyz
+RABBITMQ_USER: roboshop
+RABBITMQ_PASSWORD: roboshop123
