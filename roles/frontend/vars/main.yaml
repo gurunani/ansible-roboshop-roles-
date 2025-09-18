@@ -1,1 +1,4 @@
 CATALOGUE_HOST: catalogue.gurulabs.xyz
+USER_HOST: user.gurulabs.xyz 
+CART_HOST: cart.gurulabs.xyz 
+SHIPPING_HOST: shipping.gurulabs.xyz 
