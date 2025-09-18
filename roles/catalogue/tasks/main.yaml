@@ -19,7 +19,7 @@
     state: present
 
 - name: check products loaded or not
-  ansible.builtin.command: mongosh --host gurulabs.xyz --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
+  ansible.builtin.command: mongosh --host mongodb.gurulabs.xyz --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
   register: catalogue_output
   # ignore_errors: true
   # ignore_unreachable: true
