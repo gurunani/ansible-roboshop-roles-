@@ -1,0 +1,20 @@
+- name: Install and configure services
+  hosts: all
+  tasks:
+    - name: Install Nginx
+      ansible.builtin.dnf:
+        name: nginx
+        state: present
+      tags: nginx
+
+    - name: Start Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+      tags: nginx
+
+    - name: Install MySQL
+      ansible.builtin.dnf:
+        name: mysql-server
+        state: present
+      tags: db
