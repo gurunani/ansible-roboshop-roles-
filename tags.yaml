@@ -1,6 +1,7 @@
 - name: Install and configure services
   hosts: localhost
   connection: localhost
+  become: yes
   tasks:
   - name: Install Nginx
     ansible.builtin.dnf:
