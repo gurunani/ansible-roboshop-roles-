@@ -43,12 +43,11 @@
 
 - name: Deployment
   tags: 
-  - deployment
+    - deployment
   import_role:
-     name: common
-     tasks_from: "{{ deployment }}"
+    name: common
+    tasks_from: deployment
 
-# - name: deployment
 #   tags: 
 #   - deployment
 #   include_role:
