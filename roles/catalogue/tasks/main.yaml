@@ -53,10 +53,10 @@
   when: false #This will always skip the task.
 # ansible-playbook -i inventory.ini main.yaml -e component=catalogue -e app_version=3 --tags=deployment
 
-- name: Deployment ignore error true
-  tags: 
-    - deployment
-  include_role:
-    name: common
-    tasks_from: deployment
-  ignore_errors: true
+# - name: Deployment ignore error true
+#   tags: 
+#     - deployment
+#   include_role:
+#     name: common
+#     tasks_from: deployment
+#   ignore_errors: true
